@@ -1,14 +1,11 @@
 /*comments*/
 
 :root{
-    --background-color1: #ccc;
-    --background-color2: #C0FFF4;
-    --background-color3: #C0CBFF;
-    --background-color4: #b99470;
-    --background-color5: #99885a;
+    --background-color1: #C0D5ED;
+    --background-color2: #E1E5F7;
+    --background-color3:#C3b091;
     --text-color1: #F8F0E3;
     --text-color2: black;
-    --text-color3: pink;
     --border-color1: #FF8DA1;
     --navbar-height: 6rem;
     --navbar-bg: rgba(255, 255, 255, 0.95);
@@ -23,15 +20,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+section{
+    padding-top: 70px !important;
+    padding-bottom: 50px !important;
+}
   
 html{
     font-family: 'Raleway', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
-
     box-sizing: border-box;
     scroll-behavior: smooth;
       /*set font size 62.5%, so 1rem = 10px (100% = 16px)*/
     font-size: 62.5%; 
-    background-color: #FF8DA1;
+    background-color: var(--background-color1);
 }
   
 body{
@@ -460,7 +461,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background-color: var(--background-color3);
+    background-color: var(--background-color2);
 }
 
 #Ceremony h2 {
@@ -491,88 +492,21 @@ body{
     }
 }
 
-
-
-/* Getting There Section Styles */
-#Getting-There {
-    background-color: var(--background-color2);
-    padding: 4rem 2rem;
-}
-
-#Getting-There h2 {
-    margin-bottom: 3rem;
-    color: var(--text-color2);
-}
-
-#Getting-There h3 {
-    font-size: 2.4rem;
-    color: var(--text-color2);
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--border-color1);
-    padding-bottom: 0.5rem;
-}
-
-.flights, .activities {
-    background: white;
-    border-radius: 10px;
+#Dress-Code {
+    background-color: var(--background-color1);
+    height: 100vh;
     padding: 2rem;
-    margin: 2rem auto;
-    max-width: 800px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.flights:hover, .activities:hover {
-    transform: translateY(-5px);
-}
 
-#Getting-There ul {
-    list-style: none;
-    text-align: left;
-    padding: 0 1rem;
-}
-
-#Getting-There li {
-    margin-bottom: 1.5rem;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: var(--text-color2);
-    position: relative;
-    padding-left: 2rem;
-}
-
-#Getting-There li::before {
-    content: "✈";
-    position: absolute;
-    left: 0;
-    color: var(--border-color1);
-}
-
-.activities li::before {
-    content: "🎯" !important;
-}
-
-#Getting-There br {
-    display: block;
-    margin: 1rem 0;
-}
-
-@media (max-width: 700px) {
-    #Getting-There {
-        padding: 3rem 1rem;
-    }
-
-    .flights, .activities {
-        padding: 1.5rem;
-        margin: 1.5rem 1rem;
-    }
-
-    #Getting-There li {
-        font-size: 1.4rem;
-    }
-}
 
 /* Map Container Styles */
+#Location {
+    background-color: var(--background-color2);
+}
+
 .map-container {
     position: relative;
     width: 100%;
@@ -607,7 +541,7 @@ body{
 /*ACCOMMODATION SECTION LAYOUT START*/
 .accommodation {
     padding: 8rem 2rem;
-    background-color: var(--background-color5);
+    background-color: var(--background-color1);
     position: relative;
     overflow: hidden;
 }
@@ -619,7 +553,6 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(153, 136, 90, 0.9), rgba(185, 148, 112, 0.9));
     z-index: 1;
 }
 
@@ -629,7 +562,7 @@ body{
 }
 
 .accommodation h2 {
-    color: var(--text-color1);
+    color: var(--text-color2);
     margin-bottom: 2rem;
     font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -683,7 +616,7 @@ body{
 
 .accommodation-name {
     padding: 2rem;
-    background: var(--background-color4);
+    background: #ddd;
     color: var(--text-color1);
     font-size: 2rem;
     font-weight: bold;
@@ -869,10 +802,87 @@ body{
     }
 }
 /* RSVP Section Styles END*/
+/* Getting There Section Styles */
+#Getting-There {
+    background-color: var(--background-color1);
+    padding: 4rem 2rem;
+}
 
+#Getting-There h2 {
+    margin-bottom: 3rem;
+    color: var(--text-color2);
+}
+
+#Getting-There h3 {
+    font-size: 2.4rem;
+    color: var(--text-color2);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color1);
+    padding-bottom: 0.5rem;
+}
+
+.flights, .activities {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.flights:hover, .activities:hover {
+    transform: translateY(-5px);
+}
+
+#Getting-There ul {
+    list-style: none;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+#Getting-There li {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color2);
+    position: relative;
+    padding-left: 2rem;
+}
+
+#Getting-There li::before {
+    content: "✈";
+    position: absolute;
+    left: 0;
+    color: var(--border-color1);
+}
+
+.activities li::before {
+    content: "🎯" !important;
+}
+
+#Getting-There br {
+    display: block;
+    margin: 1rem 0;
+}
+
+@media (max-width: 700px) {
+    #Getting-There {
+        padding: 3rem 1rem;
+    }
+
+    .flights, .activities {
+        padding: 1.5rem;
+        margin: 1.5rem 1rem;
+    }
+
+    #Getting-There li {
+        font-size: 1.4rem;
+    }
+}
 /* Contact Section Styles START*/
 #Contact {
-    background-color: var(--background-color3);
+    background-color: var(--background-color2);
     min-height: 40vh;
     display: flex;
     align-items: center;
