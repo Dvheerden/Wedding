@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // START OF CLOCK JS
 // Configuration
-const WEDDING_DATE = "mar 04 2025 23:28:00";
+const WEDDING_DATE = "dec 01 2025 23:28:00";
 const deadline = new Date(WEDDING_DATE + " UTC+2").getTime();
 
 // Confetti celebration functions
