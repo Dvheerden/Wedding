@@ -5,7 +5,8 @@
     --background-color2: #E1E5F7;
     --background-color3:#C3b091;
     --text-color1: #F8F0E3;
-    --text-color2: black;
+    --text-color2: #99885a;
+    --text-color3: #555;
     --border-color1: #FF8DA1;
     --navbar-height: 6rem;
     --navbar-bg: rgba(255, 255, 255, 0.95);
@@ -41,6 +42,12 @@ body{
     margin: 0;
     text-align: center;
     padding-top: var(--navbar-height);
+}
+
+h2{
+    color: var(--text-color3);
+    font-size: 3.6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Navbar Styles */
@@ -123,6 +130,12 @@ body{
 @media screen and (max-width: 767px) {
     .mobile-menu-btn {
         display: block;
+        background-color: transparent;
+    }
+    
+    .navbar {
+        background-color: transparent;
+        box-shadow: none;
     }
 
     .nav-links {
@@ -342,6 +355,8 @@ body{
 
 #Home h2 {
     margin-bottom: 20px;
+    font-size: 3.6rem;
+    
 }
 
 #Home p {
@@ -369,6 +384,10 @@ body{
         order: 3;
     }
 }
+#Date>h2{
+    padding-bottom: 10rem;
+    font-size: 3rem;
+}
 
 #Date {
     height: 50vh;
@@ -391,14 +410,14 @@ body{
 #clockdiv>div {
     padding: 10px;
     border-radius: 3px;
-    background: #00bf96;
+    background: #00587A;
     display: inline-block;
 }
 
 #clockdiv div>span {
     padding: 15px;
     border-radius: 3px;
-    background: #00816a;
+    background: #0073A1;
     display: inline-block;
 }
 
@@ -466,20 +485,21 @@ body{
 
 #Ceremony h2 {
     margin-bottom: 2rem;
-    color: var(--text-color2);
+    font-size: 3.6rem;
 }
 
 #Ceremony p {
     margin-bottom: 2rem;
     font-size: 1.8rem;
-    color: var(--text-color2);
 }
 
 #Ceremony img {
-    max-width: 80%;
-    height: auto;
+    max-width: 90%;
+    height: 80%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 2rem auto;
+    display: block;
 }
 
 @media (max-width: 700px) {
@@ -505,6 +525,15 @@ body{
 /* Map Container Styles */
 #Location {
     background-color: var(--background-color2);
+}
+
+#Location p{
+    color: var(--text-color3);
+    font-size: 1.8rem;
+}
+
+#Location a{
+    color: var(--text-color2);
 }
 
 .map-container {
@@ -562,10 +591,7 @@ body{
 }
 
 .accommodation h2 {
-    color: var(--text-color2);
     margin-bottom: 2rem;
-    font-size: 4rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .accommodation > p {
@@ -617,7 +643,7 @@ body{
 .accommodation-name {
     padding: 2rem;
     background: #ddd;
-    color: var(--text-color1);
+    color: var(--text-color2);
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -626,7 +652,7 @@ body{
 
 .accommodation-info {
     padding: 2rem;
-    color: var(--text-color2);
+    color: var(--text-color3);
     font-size: 1.6rem;
     line-height: 1.6;
     background: white;
@@ -749,7 +775,7 @@ body{
 
 .feature-item p {
     font-size: 1.6rem;
-    color: var(--text-color2);
+    color: var(--text-color3);
     text-align: center;
     margin: 0;
 }
@@ -810,12 +836,11 @@ body{
 
 #Getting-There h2 {
     margin-bottom: 3rem;
-    color: var(--text-color2);
 }
 
 #Getting-There h3 {
     font-size: 2.4rem;
-    color: var(--text-color2);
+    color: var(--text-color3);
     margin-bottom: 1.5rem;
     border-bottom: 2px solid var(--border-color1);
     padding-bottom: 0.5rem;
@@ -845,7 +870,7 @@ body{
     margin-bottom: 1.5rem;
     font-size: 1.6rem;
     line-height: 1.6;
-    color: var(--text-color2);
+    color: var(--text-color3);
     position: relative;
     padding-left: 2rem;
 }
@@ -864,6 +889,10 @@ body{
 #Getting-There br {
     display: block;
     margin: 1rem 0;
+}
+
+#Getting-There a{
+    color: var(--text-color2);
 }
 
 @media (max-width: 700px) {
@@ -938,12 +967,12 @@ body{
 .contact-details h3 {
     font-size: 1.6rem;
     margin-bottom: 5px;
-    color: var(--text-color2);
+    color: var(--text-color3);
 }
 
 .contact-details a {
     font-size: 1.4rem;
-    color: var(--border-color1);
+    color: var(--text-color2);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -962,7 +991,7 @@ body{
 
 .contact-message p {
     font-size: 1.4rem;
-    color: var(--text-color2);
+    color: var(--text-color3);
     line-height: 1.4;
     margin: 5px 0;
 }
