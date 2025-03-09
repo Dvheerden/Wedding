@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileMenuBtn.addEventListener('click', () => {
         toggleScroll(navLinks.classList.contains('active'));
     });
+
+    createSlideshow('slideshow-container-men', 'men-dots');
+    createSlideshow('slideshow-container-women', 'women-dots');
 });
 
 // START OF CLOCK JS
@@ -117,3 +120,69 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 //END OF CLOCK JS
+
+// Slideshow functionality
+function createSlideshow(containerClass, dotsClass) {
+    let slideIndex = 0;
+    const container = document.querySelector(`.${containerClass}`);
+    const slides = container.querySelectorAll('.slide');
+    const dots = document.querySelector(`.${dotsClass}`).querySelectorAll('.dot');
+    const prev = container.querySelector('.prev');
+    const next = container.querySelector('.next');
+
+    function showSlides(n) {
+        // Reset index if out of bounds
+        if (n >= slides.length) slideIndex = 0;
+        if (n < 0) slideIndex = slides.length - 1;
+
+        // Hide all slides
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+
+        // Remove active state from all dots
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+
+        // Show current slide and activate corresponding dot
+        slides[slideIndex].classList.add('active');
+        dots[slideIndex].classList.add('active');
+    }
+
+    // Next/previous controls
+    function moveSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Dot controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    // Auto advance slides every 5 seconds
+    function autoAdvance() {
+        moveSlide(1);
+    }
+
+    // Initialize slideshow
+    if (slides.length > 0) {
+        showSlides(slideIndex);
+        setInterval(autoAdvance, 5000);
+    }
+
+    // Add click event listeners to prev/next buttons
+    prev?.addEventListener('click', () => moveSlide(-1));
+    next?.addEventListener('click', () => moveSlide(1));
+
+    // Add click event listeners to dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => currentSlide(index));
+    });
+}
+
+// Initialize both slideshows
+document.addEventListener('DOMContentLoaded', function() {
+    createSlideshow('slideshow-container-men', 'men-dots');
+    createSlideshow('slideshow-container-women', 'women-dots');
+});
