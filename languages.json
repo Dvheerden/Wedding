@@ -1,0 +1,214 @@
+{
+    "en": {
+        "nav": {
+            "home": "Home",
+            "date": "Date",
+            "ceremony": "The Ceremony",
+            "dressCode": "Dress Code",
+            "location": "Location",
+            "accommodation": "Accommodation",
+            "rsvp": "RSVP",
+            "gettingThere": "Getting There",
+            "contact": "Contact"
+        },
+        "header": {
+            "title": "Welcome to Our Wedding",
+            "subtitle": "Join us in celebrating our special day",
+            "invitation": "Dear Family and Friends,\nWe are thrilled to invite you to join us as we celebrate the most special day of our lives—our wedding! This day wouldn't be complete without you, and we can't wait to share our joy with everyone we love.\nHere, you'll find the important details about the event, including the date, time, location, and other updates. We have made sure to include everything you need to know to be part of our big day.\n\n\nPeony & Dane"
+        },
+        "home": {
+            "title": "Our Love Story",
+            "subtitle": "Every love story is beautiful, but ours is our favorite"
+        },
+        "date": {
+            "title": "Save the date: 01 December 2025",
+            "subtitle": "The countdown",
+            "days": "Days",
+            "hours": "Hours",
+            "minutes": "Minutes",
+            "seconds": "Seconds",
+            "itsTheBigDay": "IT'S THE BIG DAY!"
+        },
+        "ceremony": {
+            "title": "The Ceremony",
+            "intro": "The following itinerary is a guide to the events planned for the day, it will be finalised closer to the date.",
+            "details": "Predrinks and canapés will be served before the ceremony begins.\nDinner will be served during the ceremony, more details will be provided closer to the date.\nThe Bistro will be open for breakfast and lunch on the day of the wedding. Guests will need to liaise with the restaurant and pay for their own meals there.\nThere is a bar available at the venue. It will be an open bar up to a specified amount. You may bring your own alcohol but you will have to pay a corkage fee."
+        },
+        "dressCode": {
+            "title": "The Dress Code",
+            "intro": "Dress Code: Formal",
+            "description": "We're so excited to celebrate this special day with you, and we'd love for everyone to join us in embracing the elegance of a formal dress code. Here's a little guidance to help you plan your outfit:\nThis is your chance to shine and celebrate in style. We can't wait to see everyone looking their absolute best as we make unforgettable memories together!",
+            "ladies": "Ladies: Floor-length gowns, elegant cocktail dresses, or sophisticated evening separates.",
+            "gents": "Gents: A suit and tie is a must—think dark suits, dress shirts, and polished dress shoes. A tuxedo is optional but always welcome!",
+            "footwear": "Footwear: Dress shoes or heels—let's keep it timeless and chic!"
+        },
+        "location": {
+            "title": "Location",
+            "description": "The wedding will be held at Webersburg Wine Estate in Stellenbosch, South Africa."
+        },
+        "accommodation": {
+            "title": "Webersburg Wine Estate",
+            "intro": "Accommodation will be provided for up to 50 guests only. Some rooms will be for family only. Some of the rooms may already be booked out by other guests.",
+            "manorHouse": {
+                "name": "Manor house (Sleeps 10)",
+                "description": "The manor house was built in 1786 and is an original Cape Dutch Building with yellow wood floors."
+            },
+            "oakCottage": {
+                "name": "Oak Cottage (Sleeps 6)",
+                "description": "The Oak Cottage is a luxury three bedroom en-suite cottage with an open plan lounge, kitchen and dining area."
+            },
+            "jonkerhuis": {
+                "name": "The Jonkershuis (Sleeps 12)",
+                "description": "The Jonkershuis accommodation consists of one two bedroom unit; two luxury units with fully equipped kitchens and additional two luxury units with small kitchenettes."
+            },
+            "vineyardCottages": {
+                "name": "The Vineyard Cottages (Sleeps 26)",
+                "description": "Our Vineyard Cottages are situated amongst the vineyards with breathtaking dam and mountain views"
+            },
+            "note": "Accommodation availability will be available 3 months before the wedding. Contact Webersburg directly if you urgently want to stay there."
+        },
+        "rsvp": {
+            "title": "RSVP via Partiful",
+            "description": "We're using Partiful to make our special day even more amazing! Join us there to:",
+            "features": {
+                "attendance": "Confirm your attendance",
+                "playlist": "Add songs to our wedding playlist",
+                "food": "View food and beverage details",
+                "updates": "Get important updates"
+            },
+            "button": "RSVP Now"
+        },
+        "gettingThere": {
+            "title": "Flights & Activities",
+            "flights": {
+                "title": "Flights",
+                "fromHK": "From Hong Kong: Fly direct with Cathay Pacific to OR Tambo International Airport in Johannesburg",
+                "otherOptions": "Other options from Hong Kong: Qatar Airways to Cape Town via Doha. Or Emirates to Cape Town via Dubai. Other options include Ethiopian, Qantas and Turkish Airlines, but these may be a longer travel time.",
+                "fromJoburg": "From Johannesburg: Fly direct to Cape town, with either FlySafair, Lift Airways, FlySAA, CemAir or Airlink.",
+                "fromCapeTown": "From Cape Town: Use Uber or Bolt to get to Webersburg from the airport. Or rent a car from Hertz, Budget, Sani Sixt, Woodford, Avis, Tempest or Europcar.",
+                "note": "Public transport is not recommended."
+            },
+            "activities": {
+                "title": "Activities",
+                "stellenbosch": "There are many activities to do in Stellenbosch, including wine tasting, cycling, hiking and more.",
+                "tableMountain": "Table Mountain is a must do with a beautiful view of the city and the ocean.",
+                "capePoint": "Cape Point is a wonderful national park with beautiful views that includes Simon's Town and its penguin colony. We recommend going via Chapman's Peak.",
+                "robbenIsland": "Robben Island was a place of imprisonment for Nelson Mandela and many other political prisoners. It is now a UNESCO World Heritage Site.",
+                "moreInfo": "You can visit the South African Tourism website to find more activities"
+            }
+        },
+        "contact": {
+            "title": "Get in Touch",
+            "email": "Email",
+            "phone": "Phone / WhatsApp",
+            "venue": "Venue Information",
+            "message": "Have questions? Don't hesitate to reach out to us!\nWe're here to help make our special day perfect for everyone."
+        }
+    },
+    "zh-TW": {
+        "nav": {
+            "home": "首頁",
+            "date": "日期",
+            "ceremony": "婚禮儀式",
+            "dressCode": "服裝要求",
+            "location": "地點",
+            "accommodation": "住宿",
+            "rsvp": "回覆",
+            "gettingThere": "交通方式",
+            "contact": "聯絡我們"
+        },
+        "header": {
+            "title": "歡迎蒞臨我們的婚禮",
+            "subtitle": "與我們一同慶祝這個特別的日子",
+            "invitation": "親愛的家人和朋友們：\n我們非常高興邀請您參加我們人生中最特別的日子——我們的婚禮！沒有您的參與，這一天就不完整，我們迫不及待地想與所有我們所愛的人分享這份喜悅。\n在這裡，您將找到關於活動的重要細節，包括日期、時間、地點和其他更新。我們已確保包含您需要知道的一切，以便成為我們重要日子的一部分。\n\n\nPeony & Dane"
+        },
+        "home": {
+            "title": "我們的愛情故事",
+            "subtitle": "每個愛情故事都很美，但我們的最特別"
+        },
+        "date": {
+            "title": "婚禮日期：2025年12月1日",
+            "subtitle": "倒數計時",
+            "days": "天",
+            "hours": "時",
+            "minutes": "分",
+            "seconds": "秒",
+            "itsTheBigDay": "就是今天！"
+        },
+        "ceremony": {
+            "title": "婚禮儀式",
+            "intro": "以下行程是當天活動的指南，具體細節將在接近日期時確定。",
+            "details": "儀式開始前將提供迎賓飲品和小食。\n儀式期間將提供晚餐，更多細節將在接近日期時提供。\n婚禮當天，小酒館將開放供應早餐和午餐。賓客需要直接與餐廳聯繫並自行支付餐費。\n場地設有酒吧，將提供限額的免費暢飲。您也可以自帶酒水，但需要支付開瓶費。"
+        },
+        "dressCode": {
+            "title": "服裝要求",
+            "intro": "服裝要求：正式",
+            "description": "我們非常期待與您一起慶祝這個特別的日子，希望每個人都能展現正式服裝的優雅。以下是一些著裝建議：\n這是您展現風采的機會，讓我們一起創造難忘的回憶！",
+            "ladies": "女士：長禮服、優雅的雞尾酒禮服或精緻的晚裝套裝。",
+            "gents": "男士：必須穿著西裝和領帶——深色西裝、正裝襯衫和擦亮的正裝鞋。燕尾服是可選的，但非常歡迎！",
+            "footwear": "鞋履：正裝鞋或高跟鞋——讓我們保持永恆優雅！"
+        },
+        "location": {
+            "title": "地點",
+            "description": "婚禮將在南非斯泰倫博斯的韋伯斯堡葡萄酒莊舉行。"
+        },
+        "accommodation": {
+            "title": "韋伯斯堡葡萄酒莊",
+            "intro": "住宿僅提供給最多50位賓客。部分房間僅供家人使用。部分房間可能已被其他賓客預訂。",
+            "manorHouse": {
+                "name": "莊園主樓（可容納10人）",
+                "description": "莊園主樓建於1786年，是原汁原味的開普荷蘭式建築，鋪設黃木地板。"
+            },
+            "oakCottage": {
+                "name": "橡樹小屋（可容納6人）",
+                "description": "橡樹小屋是一間豪華的三臥室套房，配有開放式客廳、廚房和餐廳。"
+            },
+            "jonkerhuis": {
+                "name": "容克豪斯（可容納12人）",
+                "description": "容克豪斯住宿包括一間兩臥室單位、兩間配備完整廚房的豪華單位，以及兩間配備小廚房的豪華單位。"
+            },
+            "vineyardCottages": {
+                "name": "葡萄園小屋（可容納26人）",
+                "description": "我們的葡萄園小屋位於葡萄園中，享有壯麗的水庫和山景。"
+            },
+            "note": "住宿預訂將在婚禮前3個月開放。如果您急需住宿，請直接聯繫韋伯斯堡。"
+        },
+        "rsvp": {
+            "title": "通過Partiful回覆",
+            "description": "我們使用Partiful來讓我們的特別日子更加精彩！在那裡您可以：",
+            "features": {
+                "attendance": "確認出席",
+                "playlist": "為我們的婚禮播放列表添加歌曲",
+                "food": "查看餐飲詳情",
+                "updates": "獲取重要更新"
+            },
+            "button": "立即回覆"
+        },
+        "gettingThere": {
+            "title": "航班與活動",
+            "flights": {
+                "title": "航班",
+                "fromHK": "從香港：可乘坐國泰航空直飛約翰內斯堡坦博國際機場",
+                "otherOptions": "香港其他選擇：卡塔爾航空經多哈飛往開普敦，或阿聯酋航空經迪拜飛往開普敦。其他選擇包括埃塞俄比亞航空、澳洲航空和土耳其航空，但飛行時間可能較長。",
+                "fromJoburg": "從約翰內斯堡：可乘坐FlySafair、Lift Airways、FlySAA、CemAir或Airlink直飛開普敦。",
+                "fromCapeTown": "從開普敦：可使用Uber或Bolt前往韋伯斯堡，或從Hertz、Budget、Sani Sixt、Woodford、Avis、Tempest或Europcar租車。",
+                "note": "不建議使用公共交通工具。"
+            },
+            "activities": {
+                "title": "活動",
+                "stellenbosch": "斯泰倫博斯有許多活動可以參加，包括品酒、騎自行車、健行等。",
+                "tableMountain": "桌山是必遊景點，可以欣賞城市和海洋的美麗景色。",
+                "capePoint": "好望角是一個美麗的國家公園，可以欣賞西蒙鎮和企鵝群。我們建議經查普曼峰前往。",
+                "robbenIsland": "羅本島是納爾遜·曼德拉和許多其他政治犯的監禁地，現為聯合國教科文組織世界遺產。",
+                "moreInfo": "您可以訪問南非旅遊網站了解更多活動"
+            }
+        },
+        "contact": {
+            "title": "聯絡我們",
+            "email": "電子郵件",
+            "phone": "電話/WhatsApp",
+            "venue": "場地資訊",
+            "message": "有任何問題嗎？請隨時與我們聯繫！\n我們在這裡幫助您度過完美的特別日子。"
+        }
+    }
+}

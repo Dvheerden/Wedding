@@ -1421,3 +1421,27 @@ p{
         padding-bottom: 3rem;
     }
 }
+
+.language-toggle {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .language-toggle {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
