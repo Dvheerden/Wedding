@@ -1,4 +1,53 @@
+// Translation system
+let translations = {};
+let currentLang = 'en';
+
+// Load translations
+async function loadTranslations() {
+    try {
+        const response = await fetch('lang.json');
+        translations = await response.json();
+        // Set initial language based on browser preference or default to English
+        const browserLang = navigator.language || navigator.userLanguage;
+        currentLang = browserLang.startsWith('zh') ? 'zh' : 'en';
+        updatePageContent();
+    } catch (error) {
+        console.error('Error loading translations:', error);
+    }
+}
+
+// Update page content with current language
+function updatePageContent() {
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        const translation = getTranslation(key);
+        if (translation) {
+            if (element.tagName === 'INPUT' && element.type === 'placeholder') {
+                element.placeholder = translation;
+            } else {
+                element.textContent = translation;
+            }
+        }
+    });
+}
+
+// Get translation for a key
+function getTranslation(key) {
+    return key.split('.').reduce((obj, i) => obj?.[i], translations);
+}
+
+// Language switcher
+function switchLanguage(lang) {
+    currentLang = lang;
+    updatePageContent();
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Load translations first
+    loadTranslations();
+
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
     const overlay = document.querySelector('.mobile-menu-overlay');

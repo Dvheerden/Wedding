@@ -610,7 +610,7 @@ p{
     }
 
     #Ceremony img {
-        max-width: 95%;
+        max-width: 80%;
     }
 }
 /*DRESS CODE SECTION LAYOUT START*/
@@ -1419,5 +1419,41 @@ p{
     
     #Date > h2 {
         padding-bottom: 3rem;
+    }
+}
+
+/* Language Switcher Styles */
+.language-switcher {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 2px solid var(--navbar-text);
+    color: var(--navbar-text);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: var(--navbar-hover);
+    color: white;
+    border-color: var(--navbar-hover);
+}
+
+@media screen and (max-width: 767px) {
+    .language-switcher {
+        margin: 2rem 0;
+        justify-content: center;
+    }
+    
+    .lang-btn {
+        font-size: 1.6rem;
+        padding: 0.8rem 1.5rem;
     }
 }
