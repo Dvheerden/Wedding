@@ -198,6 +198,50 @@ p{
     }
 }
 
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .language-toggle {
+        position: fixed;
+        top: 15px;
+        right: 60px;
+        z-index: 1001;
+        margin: 0;
+        width: auto;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+
+    .language-toggle:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
 
 .header{
     background-color: var(--background-color1);
@@ -594,8 +638,8 @@ p{
 }
 
 #Ceremony img {
-    max-width: 30%;
-    height: 20%;
+    max-width: 60%;
+    height: 50%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     margin: 1rem auto;
@@ -1424,8 +1468,8 @@ p{
 
 .language-toggle {
     background: none;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #ccc;
+    color: #ccc;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -1443,5 +1487,6 @@ p{
         margin: 10px 0;
         width: 100%;
         text-align: center;
+        padding: 10px;
     }
 }

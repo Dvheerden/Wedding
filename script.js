@@ -83,44 +83,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-    const overlay = document.querySelector('.mobile-menu-overlay');
+// Mobile menu functionality
+const mobileMenuBtn = document.querySelector('.mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+const overlay = document.querySelector('.mobile-menu-overlay');
 
-    mobileMenuBtn.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navLinks.classList.toggle('active');
-        overlay.classList.toggle('active');
-    });
+function toggleMobileMenu() {
+    mobileMenuBtn.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    overlay.classList.toggle('active');
+    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+}
 
-    // Close menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenuBtn.classList.remove('active');
-            navLinks.classList.remove('active');
-            overlay.classList.remove('active');
-        });
-    });
+mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+overlay.addEventListener('click', toggleMobileMenu);
 
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-            mobileMenuBtn.classList.remove('active');
-            navLinks.classList.remove('active');
-            overlay.classList.remove('active');
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            toggleMobileMenu();
         }
     });
+});
 
-    // Prevent scrolling when mobile menu is open
-    function toggleScroll(disable) {
-        document.body.style.overflow = disable ? 'hidden' : '';
-    }
+// Prevent language toggle from closing mobile menu
+const languageToggle = document.getElementById('languageToggle');
+languageToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
 
-    mobileMenuBtn.addEventListener('click', () => {
-        toggleScroll(navLinks.classList.contains('active'));
-    });
-
+document.addEventListener('DOMContentLoaded', function() {
     createSlideshow('slideshow-container-men', 'men-dots');
     createSlideshow('slideshow-container-women', 'women-dots');
 });

@@ -33,11 +33,9 @@
         <i></i> 
       </div>
 
-<div class="navbar">
-    <div class="mobile-menu-btn" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
+<nav class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo" loading="lazy">
     </div>
     <div class="nav-links">
         <a href="#Home" data-translate="nav.home">Home</a>
@@ -49,11 +47,16 @@
         <a href="#RSVP" data-translate="nav.rsvp">RSVP</a>
         <a href="#Getting-There" data-translate="nav.gettingThere">Getting There</a>
         <a href="#Contact" data-translate="nav.contact">Contact</a>
-        <button id="languageToggle" class="language-toggle" aria-label="Switch language">
-            <span>EN</span>
-        </button>
     </div>
-</div>
+    <button id="languageToggle" class="language-toggle" aria-label="Switch language">
+        <span>EN</span>
+    </button>
+    <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
 <div class="mobile-menu-overlay"></div>
 
 <div class="header">
@@ -140,7 +143,7 @@
     <!-- Men's Slideshow -->
     <div class="slideshow-container-men">
         <div class="slide">
-            <img src="images/men1.png" alt="Men's Dress Code 1" loading="lazy">
+            <img src="images/men1.png" alt="Men's Dress Code 1" loading="eager"	>
         </div>
         <div class="slide">
             <img src="images/men2.png" alt="Men's Dress Code 2" loading="lazy">
