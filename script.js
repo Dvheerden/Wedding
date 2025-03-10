@@ -127,8 +127,8 @@ function createSlideshow(containerClass, dotsClass) {
     const container = document.querySelector(`.${containerClass}`);
     const slides = container.querySelectorAll('.slide');
     const dots = document.querySelector(`.${dotsClass}`).querySelectorAll('.dot');
-    const prev = container.querySelector('.prev');
-    const next = container.querySelector('.next');
+    let touchStartX = 0;
+    let touchEndX = 0;
 
     function showSlides(n) {
         // Reset index if out of bounds
@@ -160,6 +160,37 @@ function createSlideshow(containerClass, dotsClass) {
         showSlides(slideIndex = n);
     }
 
+    // Touch event handlers
+    function handleTouchStart(e) {
+        touchStartX = e.touches[0].clientX;
+    }
+
+    function handleTouchMove(e) {
+        if (!touchStartX) return;
+        touchEndX = e.touches[0].clientX;
+    }
+
+    function handleTouchEnd() {
+        if (!touchStartX || !touchEndX) return;
+        
+        const diffX = touchStartX - touchEndX;
+        const threshold = 50; // minimum distance for swipe
+
+        if (Math.abs(diffX) > threshold) {
+            if (diffX > 0) {
+                // Swiped left - show next slide
+                moveSlide(1);
+            } else {
+                // Swiped right - show previous slide
+                moveSlide(-1);
+            }
+        }
+
+        // Reset values
+        touchStartX = 0;
+        touchEndX = 0;
+    }
+
     // Auto advance slides every 5 seconds
     function autoAdvance() {
         moveSlide(1);
@@ -169,11 +200,12 @@ function createSlideshow(containerClass, dotsClass) {
     if (slides.length > 0) {
         showSlides(slideIndex);
         setInterval(autoAdvance, 5000);
-    }
 
-    // Add click event listeners to prev/next buttons
-    prev?.addEventListener('click', () => moveSlide(-1));
-    next?.addEventListener('click', () => moveSlide(1));
+        // Add touch event listeners
+        container.addEventListener('touchstart', handleTouchStart, false);
+        container.addEventListener('touchmove', handleTouchMove, false);
+        container.addEventListener('touchend', handleTouchEnd, false);
+    }
 
     // Add click event listeners to dots
     dots.forEach((dot, index) => {

@@ -46,13 +46,19 @@ body{
 
 h2{
     color: var(--text-color3);
-    font-size: 6rem;
+    font-size: 3.6rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 10;
+    text-transform: uppercase;
+}
+
+h3{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 p{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 1.8rem;
 }
 /* Navbar Styles */
 .navbar {
@@ -208,14 +214,14 @@ p{
 }
 
 .header h1 {
-    font-size: 6rem;
+    font-size: 4.5rem;
     margin-bottom: 2rem;
     color: var(--text-color3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
 }
 
 .header p {
-    font-size: 2rem;
     margin-bottom: 3rem;
     color: var(--text-color3);
 }
@@ -353,7 +359,6 @@ p{
 
 .header-text {
     color: var(--text-color1) !important;
-    font-size: 1.8rem;
     max-width: 800px;
     margin: 0 auto 4rem;
     line-height: 1.6;
@@ -409,7 +414,6 @@ p{
 }
 
 #Home p {
-    font-size: 1.8rem;
     margin-top: 20px;
     z-index: 10;
     color: var(--text-color3);
@@ -500,7 +504,6 @@ p{
     padding-bottom: 5rem;
 }
 #Date > p {
-    font-size: 2.4rem;
     z-index: 10;
     color: var(--text-color3);
     padding-bottom: 5rem;
@@ -509,27 +512,58 @@ p{
 #clockdiv {
     font-family: sans-serif;
     color: #fff;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     font-weight: 100;
     text-align: center;
     font-size: 30px;
     z-index: 10;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-#clockdiv>div {
+#clockdiv > div {
     padding: 10px;
     border-radius: 3px;
     background: #00587A;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    flex: 1;
 }
 
-#clockdiv div>span {
+#clockdiv div > span {
     padding: 15px;
     border-radius: 3px;
     background: #0073A1;
-    display: inline-block;
+    display: block;
+    width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+    #clockdiv {
+        font-size: 24px;
+        gap: 10px;
+    }
+
+    #clockdiv > div {
+        padding: 8px;
+        min-width: 70px;
+    }
+
+    #clockdiv div > span {
+        padding: 10px;
+    }
+
+    .smalltext {
+        font-size: 14px;
+    }
+}
 
 /* Ceremony Section Styles */
 #Ceremony {
@@ -550,7 +584,6 @@ p{
 
 #Ceremony p {
     color: var(--text-color1);
-    font-size: 1.8rem;
     max-width: 800px;
     margin: 1rem auto 4rem;
     line-height: 1.6;
@@ -561,13 +594,14 @@ p{
 }
 
 #Ceremony img {
-    max-width: 90%;
-    height: 80%;
+    max-width: 30%;
+    height: 20%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     margin: 1rem auto;
     display: block;
     z-index: 10;
+    opacity: 0.8;
 }
 
 @media (max-width: 700px) {
@@ -589,9 +623,14 @@ p{
     z-index: 10;
 }
 
+#Dress-Code h2{
+    position: relative; 
+    z-index: 10;
+}
+
 #Dress-Code p, #Dress-Code ul{
+    position: relative;
     color: var(--text-color1);
-    font-size: 1.8rem;
     max-width: 800px;
     margin: 1rem auto 4rem;
     line-height: 1.6;
@@ -604,8 +643,10 @@ p{
 
 #Dress-Code li{
     list-style-type: none;
+    line-height: 1.6;
     z-index: 10;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 1.6rem;
 }
 
 /* Slideshow styles */
@@ -617,6 +658,8 @@ p{
     height: 400px;
     overflow: hidden;
     border-radius: 10px;
+    cursor: grab;
+    touch-action: pan-y pinch-zoom;
 }
 
 /* Add spacing between slideshows */
@@ -640,43 +683,12 @@ p{
     height: 100%;
     object-fit: contain;
     background-color: transparent;
+    pointer-events: none; /* Prevent image dragging */
 }
 
 .slide.active {
     display: block;
     opacity: 1;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0,0,0,0.3);
-    z-index: 11;
-}
-
-.next {
-    right: 90px;
-    border-radius: 0 10px 10px 0;
-}
-
-.prev {
-    left: 90px;
-    border-radius: 10px 0 0 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
 }
 
 /* Dots/bullets/indicators */
@@ -710,19 +722,6 @@ p{
     .slideshow-container-women {
         margin-top: 3rem;
     }
-    
-    .prev, .next {
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .next {
-        right: 5px;
-    }
-
-    .prev {
-        left: 5px;
-    }
 }
 /* Map Container Styles */
 #Location {
@@ -738,7 +737,6 @@ p{
 
 #Location p{
     color: var(--text-color1);
-    font-size: 1.8rem;
     max-width: 800px;
     margin: 1rem auto 4rem;
     line-height: 1.6;
@@ -749,7 +747,7 @@ p{
 }
 
 #Location a{
-    color: var(--text-color2);   
+    color: var(--text-color3);   
 }
 
 .map-container {
@@ -812,7 +810,6 @@ p{
 
 .accommodation > p {
     color: var(--text-color1);
-    font-size: 1.8rem;
     max-width: 800px;
     margin: 0 auto 4rem;
     line-height: 1.6;
@@ -872,8 +869,8 @@ p{
     padding: 2rem;
     color: var(--text-color3);
     font-size: 1.6rem;
-    line-height: 1.6;
-    background: white;
+    line-height: 1.8;
+    background: white 0.8;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -888,7 +885,7 @@ p{
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     backdrop-filter: blur(5px);
 }
 
@@ -927,12 +924,22 @@ p{
 /*ACCOMMODATION SECTION LAYOUT END*/
 
 /* RSVP Section Styles START*/
+
 #RSVP {
     background-color: var(--background-color2);
     min-height: 80vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+}
+
+#RSVP h2 {
+    margin-bottom: 4rem;
+    color: var(--text-color3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 .rsvp-container {
@@ -941,6 +948,7 @@ p{
     background: white;
     border-radius: 20px;
     padding: 40px;
+    background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     z-index: 10;
 }
@@ -958,15 +966,15 @@ p{
 }
 
 .rsvp-description {
-    font-size: 2rem;
-    color: var(--text-color3);
+    font-size: 1.6rem;
+    color: var(--text-color1);
     text-align: center;
     max-width: 600px;
     line-height: 1.6;
 }
 
 .rsvp-description a{
-    color: var(--text-color2);
+    color: var(--text-color3);
 }
 
 .rsvp-features {
@@ -1007,7 +1015,7 @@ p{
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background-color: var(--border-color1);
+    background-color: #9b4f96;
     color: white;
     padding: 15px 40px;
     border-radius: 30px;
@@ -1017,11 +1025,13 @@ p{
     letter-spacing: 1px;
     transition: all 0.3s ease;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .rsvp-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 141, 161, 0.4);
+    box-shadow: 0 5px 15px rgba(155, 79, 150, 0.4);
+    background-color: #8a2be2;
 }
 
 .button-icon {
@@ -1084,6 +1094,7 @@ p{
     padding: 2rem;
     margin: 2rem auto;
     max-width: 800px;
+    background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     z-index: 10;
@@ -1103,7 +1114,7 @@ p{
     margin-bottom: 1.5rem;
     font-size: 1.6rem;
     line-height: 1.6;
-    color: var(--text-color3);
+    color: var(--text-color1);
     position: relative;
     padding-left: 2rem;
 }
@@ -1112,7 +1123,7 @@ p{
     content: "✈";
     position: absolute;
     left: 0;
-    color: var(--border-color1);
+    color: #9b4f96;
 }
 
 .activities li::before {
@@ -1125,7 +1136,7 @@ p{
 }
 
 #Getting-There a{
-    color: var(--text-color2);
+    color: var(--text-color3);
 }
 
 @media (max-width: 700px) {
@@ -1148,19 +1159,27 @@ p{
     background-color: var(--background-color2);
     min-height: 40vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
 }
 
+#Contact h2 {
+    margin-bottom: 3rem;
+    color: var(--text-color3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
 .contact-container {
     max-width: 600px;
     width: 90%;
-    background: white;
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .contact-content {
@@ -1202,19 +1221,18 @@ p{
 .contact-details h3 {
     font-size: 1.6rem;
     margin-bottom: 5px;
-    color: var(--text-color3);
+    color: var(--text-color1);
 }
 
 .contact-details a {
     font-size: 1.4rem;
-    color: var(--text-color2);
-    text-decoration: none;
+    color: var(--text-color3);
+    text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 .contact-details a:hover {
-    color: var(--text-color2);
-    text-decoration: underline;
+    color: var(--text-color3);
 }
 
 .contact-message {
@@ -1226,7 +1244,7 @@ p{
 
 .contact-message p {
     font-size: 1.4rem;
-    color: var(--text-color3);
+    color: var(--text-color1);
     line-height: 1.4;
     margin: 5px 0;
 }
@@ -1249,6 +1267,10 @@ p{
 @media (max-width: 767px) {
     #Contact {
         padding: 30px 15px;
+    }
+
+    #Contact h2 {
+        margin-bottom: 2rem;
     }
 
     .contact-container {
@@ -1291,22 +1313,25 @@ p{
     animation: falling 10s 0s infinite;
     opacity: 0;
     pointer-events: none;
+    background: linear-gradient(45deg, rgba(155, 79, 150, 0.3) 0%, rgba(106, 13, 173, 0.6) 100%);
+    box-shadow: 0 0 8px rgba(106, 13, 173, 0.1);
 }
 
 #petals i:nth-of-type(2n) { 
     -webkit-animation: falling2 6s 0s infinite;
     animation: falling2 6s 0s infinite;
+    background: linear-gradient(45deg, rgba(138, 43, 226, 0.3) 0%, rgba(148, 0, 211, 0.6) 100%);
 }
+
 #petals i:nth-of-type(3n) { 
     -webkit-animation: falling3 12s 0s infinite;
     animation: falling3 12s 0s infinite;
+    background: linear-gradient(45deg, rgba(128, 0, 128, 0.3) 0%, rgba(75, 0, 130, 0.6) 100%);
 }
 
 #petals i:nth-of-type(n)    { width: 21px; height: 20px; }
 #petals i:nth-of-type(2n+1)    { height:17px; width:19px; }
-
 #petals i:nth-of-type(3n+2)  { height:14px; width:11px; }
-
 
 #petals i:nth-of-type(n)   { -webkit-animation-delay: 1.9s;}
 #petals i:nth-of-type(2n)  { -webkit-animation-delay: 3.9s;}
@@ -1323,9 +1348,6 @@ p{
 #petals i:nth-of-type(13n) { -webkit-animation-delay: 1s;  }
 #petals i:nth-of-type(14n) { -webkit-animation-delay: 4.7s;}
 #petals i:nth-of-type(15n) { -webkit-animation-delay: 3s;  }
-
-#petals i:nth-of-type(n)    { background: url("https://lh3.googleusercontent.com/gr2Xjzyy5f-vdto3iuLhafp-v-EJwMrjtkOWu-bXwUpmcEepO6TmC3GR7pOshZS5FWCpRTiIl4Jpf6BkW5EeU23O9p8tV9TfGJcvzwH7QYw2-OG-VymP0-TOM1Pu85vbxmIGXiiHQzPhruXJKdK2J-jvl8LDhMHoIusXYbEmqHWdXBKkjjloUNzwcXXIBq-EWT21Q07txQqv5fSlKtLUeUCPVR10lZCThup1XA5Ta-GGbHzGsY0fm9uyAyJ4qm1FgDRxvVH3l847ShSRuKiHCDnjeF5d4hDMCYsfjK0ZR4fFfYjmrQhDwGtZ6nIl3uwohkT05MRR3L169pV9FYkeSAgyQsKXHFzdjcVfuPkVOvkB10K26AJjAxq6M2FrFFw5YSuO_FAhSTOH_dZkLFsH3mcqIw5DRQHq2LHqkIokNNhtTV9L-h7thwtQubu7pJvF3W3WbwEla9X9zgm3BI_jnlgjHmevrr-gIly7mZX6eJwWtV2YGOq7howCFxOLqZVaqDj8VwsdMg9_o0VzxPh9L8qCpkWnso9jjyQyyX5CAgXECFW0ViRxrtYcJgxAcaWkmZ9Vf_14yTgF1UgspIX7_LIrMCvxqy1v8M9Oh6mE2Sii6ogob9SUhsJfhYPCS6Wzc91GEfQzAd8Fn1in9sL5T5HbKN7XeulHkrkqQ8qsX4SjMLnR_ifY6snMMqMpv0U30CJP9yqjo_vAcyd52juQtk2iRQ=s22-no") no-repeat;}
-
 
 #petals i:nth-of-type(n)    {transform:rotate(120deg);}
 
