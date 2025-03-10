@@ -1446,6 +1446,12 @@ p{
     border-color: var(--navbar-hover);
 }
 
+.lang-btn.active {
+    background-color: var(--navbar-hover);
+    color: white;
+    border-color: var(--navbar-hover);
+}
+
 @media screen and (max-width: 767px) {
     .language-switcher {
         margin: 2rem 0;

@@ -33,7 +33,17 @@ function updatePageContent() {
 
 // Get translation for a key
 function getTranslation(key) {
-    return key.split('.').reduce((obj, i) => obj?.[i], translations);
+    const keys = key.split('.');
+    let current = translations[currentLang];
+    
+    for (const k of keys) {
+        if (current && current[k]) {
+            current = current[k];
+        } else {
+            return null;
+        }
+    }
+    return current;
 }
 
 // Language switcher
@@ -42,6 +52,14 @@ function switchLanguage(lang) {
     updatePageContent();
     // Update HTML lang attribute
     document.documentElement.lang = lang;
+    
+    // Update active state of language buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent.toLowerCase() === lang) {
+            btn.classList.add('active');
+        }
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
