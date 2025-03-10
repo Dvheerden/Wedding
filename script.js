@@ -1,119 +1,41 @@
-// Language switching functionality
-let currentLang = 'en';
-let translations = {};
-
-// Load translations from languages.json
-fetch('languages.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Translations loaded successfully');
-        translations = data;
-        updateLanguage();
-    })
-    .catch(error => {
-        console.error('Error loading translations:', error);
-    });
-
-function updateLanguage() {
-    console.log('Updating language to:', currentLang);
-    
-    // Update all elements with data-translate attribute
-    const elements = document.querySelectorAll('[data-translate]');
-    console.log('Found elements to translate:', elements.length);
-    
-    elements.forEach(element => {
-        const key = element.getAttribute('data-translate');
-        const keys = key.split('.');
-        let value = translations[currentLang];
-        
-        // Navigate through the translation object
-        for (const k of keys) {
-            if (!value) {
-                console.error(`Translation missing for key: ${key}`);
-                return;
-            }
-            value = value[k];
-        }
-        
-        if (value) {
-            element.textContent = value;
-            console.log(`Updated element with key ${key}`);
-        } else {
-            console.error(`Translation missing for key: ${key}`);
-        }
-    });
-
-    // Update language toggle button
-    const languageToggle = document.getElementById('languageToggle');
-    if (languageToggle) {
-        const span = languageToggle.querySelector('span');
-        if (span) {
-            span.textContent = currentLang === 'en' ? '中文' : 'EN';
-            console.log('Updated language toggle button text');
-        } else {
-            console.error('Language toggle span not found');
-        }
-    } else {
-        console.error('Language toggle button not found');
-    }
-
-    // Update HTML lang attribute
-    document.documentElement.lang = currentLang;
-    console.log('Updated HTML lang attribute');
-}
-
-// Initialize language toggle button
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM Content Loaded');
-    const languageToggle = document.getElementById('languageToggle');
-    if (languageToggle) {
-        console.log('Language toggle button found');
-        languageToggle.addEventListener('click', () => {
-            console.log('Language toggle clicked');
-            currentLang = currentLang === 'en' ? 'zh-TW' : 'en';
-            updateLanguage();
-        });
-    } else {
-        console.error('Language toggle button not found on DOM load');
-    }
-});
-
-// Mobile menu functionality
-const mobileMenuBtn = document.querySelector('.mobile-menu');
-const navLinks = document.querySelector('.nav-links');
-const overlay = document.querySelector('.mobile-menu-overlay');
-
-function toggleMobileMenu() {
-    mobileMenuBtn.classList.toggle('active');
-    navLinks.classList.toggle('active');
-    overlay.classList.toggle('active');
-    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-}
-
-mobileMenuBtn.addEventListener('click', toggleMobileMenu);
-overlay.addEventListener('click', toggleMobileMenu);
-
-// Close mobile menu when clicking a link
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        if (navLinks.classList.contains('active')) {
-            toggleMobileMenu();
-        }
-    });
-});
-
-// Prevent language toggle from closing mobile menu
-const languageToggle = document.getElementById('languageToggle');
-languageToggle.addEventListener('click', (e) => {
-    e.stopPropagation();
-});
-
 document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    const overlay = document.querySelector('.mobile-menu-overlay');
+
+    mobileMenuBtn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuBtn.classList.remove('active');
+            navLinks.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            mobileMenuBtn.classList.remove('active');
+            navLinks.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+    });
+
+    // Prevent scrolling when mobile menu is open
+    function toggleScroll(disable) {
+        document.body.style.overflow = disable ? 'hidden' : '';
+    }
+
+    mobileMenuBtn.addEventListener('click', () => {
+        toggleScroll(navLinks.classList.contains('active'));
+    });
+
     createSlideshow('slideshow-container-men', 'men-dots');
     createSlideshow('slideshow-container-women', 'women-dots');
 });
