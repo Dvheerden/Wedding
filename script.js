@@ -218,3 +218,12 @@ document.addEventListener('DOMContentLoaded', function() {
     createSlideshow('slideshow-container-men', 'men-dots');
     createSlideshow('slideshow-container-women', 'women-dots');
 });
+
+
+function songNotReady() {
+    alert("The playlist will be up and running a few weeks before the wedding!");
+}
+
+function foodNotReady() {
+    alert("Expect more details about 2 months before the wedding, let us know about any food allergies!");
+}
