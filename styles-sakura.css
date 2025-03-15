@@ -1337,25 +1337,28 @@ p{
 
 #petals i {
     display: inline-block;
-    font-size: 25px;
+    width: 30%;
+    height: 100%;
     z-index: 5;
-    opacity: 0;
-    pointer-events: none;
-    color: rgba(255, 62, 96, 0.6); /* Heart color */
+    border-radius: 58% 20% 70%;
     -webkit-animation: falling 10s 0s infinite;
     animation: falling 10s 0s infinite;
+    opacity: 0;
+    pointer-events: none;
+    background: linear-gradient(45deg, rgba(255, 62, 96, 0.3) 0%, rgba(255, 101, 128, 0.6) 100%);
+    box-shadow: 0 0 8px rgba(106, 13, 173, 0.1);
 }
 
 #petals i:nth-of-type(2n) { 
     -webkit-animation: falling2 6s 0s infinite;
     animation: falling2 6s 0s infinite;
-    color: rgba(255, 141, 161, 0.6); /* Different color for variety */
+    background: linear-gradient(45deg, rgba(255, 141, 161, 0.3) 0%, rgba(255, 164, 180, 0.6) 100%);
 }
 
 #petals i:nth-of-type(3n) { 
     -webkit-animation: falling3 12s 0s infinite;
     animation: falling3 12s 0s infinite;
-    color: rgba(255, 187, 199, 0.6); /* Different color for variety */
+    background: linear-gradient(45deg, rgba(255, 187, 199, 0.3) 0%, rgba(240, 128, 128, 0.6) 100%);
 }
 
 #petals i:nth-of-type(n)    { width: 21px; height: 20px; }
@@ -1381,6 +1384,12 @@ p{
 #petals i:nth-of-type(n)    {transform:rotate(120deg);}
 
 #petals i:nth-of-type(n) { -webkit-animation-timing-function:ease-in-out; animation-timing-function: ease-in-out;}
+
+
+/* #petals i:nth-of-type(n)    { opacity: 1;}
+#petals i:nth-of-type(3n+1)  { opacity: .95;}
+#petals i:nth-of-type(3n+2)  { opacity: .8;} */
+
 
 @keyframes falling {
     0% {
