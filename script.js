@@ -219,6 +219,21 @@ document.addEventListener('DOMContentLoaded', function() {
     createSlideshow('slideshow-container-women', 'women-dots');
 });
 
+// Updated script.js
+window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    
+    // Add fade-out class
+    loadingScreen.classList.add('fade-out');
+    
+    // Hide the loading screen after the fade-out animation completes
+    setTimeout(() => {
+        loadingScreen.style.display = 'none';
+    }, 5000); // Match the duration of the fade-out animation
+    
+    // Show the main content
+    document.getElementById('main-content').style.display = 'block';
+});
 
 function songNotReady() {
     alert("The playlist will be up and running a few weeks before the wedding!");
