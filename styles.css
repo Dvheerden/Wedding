@@ -6,8 +6,8 @@ visibility: hidden !important;
 
 
 :root{
-    --background-color1: #C0D5ED;
-    --background-color2: #E1E5F7;
+    --background-color1: #faebd7;
+    --background-color2: #faf0e6;
     --background-color3:#C3b091;
     --text-color1: #F8F0E3;
     --text-color2: #99885a;
@@ -39,9 +39,8 @@ html{
       /*set font size 62.5%, so 1rem = 10px (100% = 16px)*/
     font-size: 62.5%; 
     background-color: var(--background-color1);
-    overflow: hidden;
 }
-  
+
 body{
     
     padding: 0;
@@ -49,34 +48,6 @@ body{
     text-align: center;
     padding-top: var(--navbar-height);
     background-color: var(--background-color1);
-    overflow: hidden;
-}
-
-#loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff; /* Background color of the loading screen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Ensure it's on top */
-    transition: opacity 5s ease-out;
-}
-
-#loading-screen img {
-    width: 150px; /* Adjust logo size */
-    height: auto;
-}
-
-#loading-screen.fade-out {
-    opacity: 0;
-}
-
-#main-content {
-    display: none; /* Hide main content initially */
 }
 
 h2{
@@ -1473,5 +1444,31 @@ p{
     
     #Date > h2 {
         padding-bottom: 3rem;
+    }
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--background-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-screen img {
+    width: 100px;
+    height: 100px;
+    animation: upDown 1s ease-in-out infinite;
+}
+
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }
