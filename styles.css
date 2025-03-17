@@ -368,7 +368,7 @@ p{
     }
 
     .header h1 {
-        font-size: 2.8rem;
+        font-size: 4rem;
     }
 
     .header p {
@@ -401,7 +401,7 @@ p{
     }
 
     .header h1 {
-        font-size: 2.4rem;
+        font-size: 3rem;
     }
 
     .header p {
@@ -661,7 +661,7 @@ p{
 }
 
 #Ceremony p {
-    color: var(--text-color1);
+    color: var(--text-color3);
     max-width: 800px;
     margin: 1rem auto 4rem;
     line-height: 1.6;
@@ -708,7 +708,7 @@ p{
 
 #Dress-Code p{
     position: relative;
-    color: var(--text-color1);
+    color: var(--text-color3);
     max-width: 800px;
     margin: 1rem auto 4rem;
     line-height: 1.6;
@@ -808,7 +808,7 @@ p{
 }
 
 #Location p{
-    color: var(--text-color1);
+    color: var(--text-color3);
     max-width: 800px;
     margin: 1rem auto 4rem;
     line-height: 1.6;
@@ -882,7 +882,7 @@ p{
 }
 
 .accommodation > p {
-    color: var(--text-color1);
+    color: var(--text-color3);
     max-width: 800px;
     margin: 0 auto 4rem;
     line-height: 1.6;
@@ -1143,7 +1143,7 @@ p{
     margin-bottom: 1.5rem;
     font-size: 1.6rem;
     line-height: 1.6;
-    color: var(--text-color1);
+    color: var(--text-color3);
     position: relative;
     padding-left: 2rem;
 }
@@ -1252,7 +1252,7 @@ p{
 .contact-details h3 {
     font-size: 1.6rem;
     margin-bottom: 5px;
-    color: var(--text-color1);
+    color: var(--text-color3);
 }
 
 .contact-details a {
@@ -1275,7 +1275,7 @@ p{
 
 .contact-message p {
     font-size: 1.4rem;
-    color: var(--text-color1);
+    color: var(--text-color3);
     line-height: 1.4;
     margin: 5px 0;
 }
