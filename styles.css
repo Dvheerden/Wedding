@@ -823,6 +823,7 @@ p{
     align-items: center;
     justify-content: center;
     justify-items: center; /* Center items within the grid */
+    z-index: 10;
 }
 
 .color-tile {
@@ -836,6 +837,8 @@ p{
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background: white;
+    z-index: 10;
+    opacity: 0.95;
 }
 
 .color-swatch {
@@ -847,6 +850,7 @@ p{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    z-index: 10;
 }
 
 .color-caption {
