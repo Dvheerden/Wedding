@@ -232,6 +232,6 @@ function foodNotReady() {
     alert("Expect more details about 2 months before the wedding, let us know about any food allergies!");
 }
 
-function photoNotReady() {
-    alert("The link for the photo album will be up and running soon!");
-}
+//function photoNotReady() {
+//    alert("The link for the photo album will be up and running soon!");
+//}
