@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const loadingScreen = document.getElementById('loading-screen');
     setTimeout(() => {
         loadingScreen.style.display = 'none';
-    }, 1000);
+    }, 1500);
 
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
