@@ -3,361 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="彭妮和丹恩的婚禮網站">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <title>Peony & Dane's Wedding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Big+Shoulders+Stencil+Text:wght@400;700&display=swap" rel="stylesheet">
+    <title>Peony 和 Dane 的婚禮</title>
 </head>
 <body>
-
-    <div id="petals">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i> 
-        <i></i>
-        <i></i>
-        <i></i> 
-        <i></i>
-        <i></i>
-        <i></i> 
-      </div>
-
-<div class="navbar">
-    <div class="mobile-menu-btn" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div id="loading-screen">
+        <img src="images/untitled.png" alt="載入中...">
     </div>
-    <div class="nav-links">
-        <a href="#Home">首頁</a>
-        <a href="#Date">日期</a>
-        <a href="#Ceremony">婚禮儀式</a>
-        <a href="#Dress-Code">服裝要求</a>
-        <a href="#Location">地點</a>
-        <a href="#Accommodation">住宿</a>
-        <a href="#RSVP">回覆</a>
-        <a href="#Getting-There">交通</a>
-        <a href="#Contact">聯絡我們</a>
-        <div class="language-switcher">
-            <a href="index.html">EN</a>
-            <span>|</span>
-            <a href="index-zh.html" class="active">中文</a>
+    <div id="petals">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+    </div>
+
+    <div class="navbar">
+        <div class="mobile-menu-btn" aria-label="切換導航選單">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#Home">家</a>
+            <a href="#Date">日期</a>
+            <a href="#Ceremony">典禮</a>
+            <a href="#Dress-Code">著裝要求</a>
+            <a href="#Location">地點</a>
+            <a href="#Accommodation">住宿</a>
+            <a href="#RSVP">敬請回覆</a>
+            <a href="#Getting-There">如何到達</a>
+            <a href="#Contact">接觸</a>
+            <div class="language-switcher">
+                <a href="index.html" class="active">EN</a>
+                <span>|</span>
+                <a href="index-zh.html">中文</a>
+            </div>
         </div>
     </div>
-</div>
-<div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu-overlay"></div>
 
-<div class="header">
-    <h1>歡迎蒞臨我們的婚禮</h1>
-    <p>與我們一同慶祝這個特別的日子</p>
+    <div class="header">
+    <h1>歡迎參加我們的婚禮</h1>
+    <p class="header-welcome">與我們一起慶祝我們的特別日子.</p>
     <div class="header-images">
         <div class="image-container-peony">
-            <img src="images/Peony.jpg" alt="Picture of Peony" loading="lazy">
+            <img src="images/peony1.jpg" alt="Picture of Peony" loading="eager">
             <div class="image-caption">Peony</div>
         </div>
         <div class="image-container-dane">
-            <img src="images/Dane.jpg" alt="Picture of Dane" loading="lazy">
+            <img src="images/dane2.jpg" alt="Picture of Dane" loading="eager">
             <div class="image-caption">Dane</div>
         </div>
     </div>
-    <p class="header-text">親愛的親朋好友：\n\n我們非常高興邀請您參加我們人生中最重要的日子——我們的婚禮！沒有您的參與，這一天就不完整，我們迫不及待地想與所有我們愛的人分享這份喜悅。
-        在這裡，您將找到活動的重要細節，包括日期、時間、地點和其他更新。我們已確保包含您需要知道的一切，以便參與我們的大日子
+    <p class="header-text">親愛的家人和朋友們，我們很高興邀請您與我們一起慶祝我們一生中最特別的一天——我們的婚禮！如果沒有你，這一天就不完整，我們迫不及待地想與我們所愛的每個人分享我們的喜悅。在這裡，您可以找到有關活動的重要詳細信息，包括日期、時間、地點和其他更新。我們確保為您提供參與我們大喜之日所需了解的一切資訊。
         <br>
         <br>
         Peony & Dane</p>
-</div>
+    </div>
 
-<section id="Home">
-        <img src="images/Us.jpg" alt="Picture of Us" loading="lazy" class="image-left">
-         <div class="content-center">
-          <h2>Our Love Story</h2>
-          <div class="heart"></div>
-          <p>Every love story is beautiful, but ours is our favorite.</p>
+    <section id="Home">
+        <img src="images/us1.jpg" alt="Picture of Us" loading="lazy" class="image-left">
+        <div class="content-center">
+            <h2>我們的愛情故事</h2>
+            <div class="heart"></div>
+            <p>每個愛情故事都是美麗的，但我們的愛情故事是我們最喜歡的。.</p>
         </div>
         <img src="images/moreus.jpg" alt="Another picture of Us" loading="lazy" class="image-right">
-</section>
+    </section>
 
-<section id="Date">
-    <h2>請記下日期: <br> 2025年12月1日</h2>
-    <p>倒數計時</p>
-    <div id="clockdiv">
-        <div>
-            <span class="days" id="day"></span>
-            <div class="smalltext">天</div>
+    <section id="Date">
+        <h2>保存日期：</h2> <br>
+        <h2 class="deadline">2025 年 12 月 1 日</h2>
+        <p class="countdown">倒數計時</p>
+        <div id="clockdiv">
+            <div>
+                <span class="days" id="day"></span>
+                <div class="smalltext">天</div>
+            </div>
+            <div>
+                <span class="hours" id="hour"></span>
+                <div class="smalltext">小時</div>
+            </div>
+            <div>
+                <span class="minutes" id="minute"></span>
+                <div class="smalltext">分分鐘</div>
+            </div>
+            <div>
+                <span class="seconds" id="second"></span>
+                <div class="smalltext">秒</div>
+            </div>
         </div>
-        <div>
-            <span class="hours" id="hour"></span>
-            <div class="smalltext">時</div>
-        </div>
-        <div>
-            <span class="minutes" id="minute"></span>
-            <div class="smalltext">分</div>
-        </div>
-        <div>
-            <span class="seconds" id="second"></span>
-            <div class="smalltext">秒</div>
-        </div>
-    </div>
-    <p id="demo"></p>
-</section>
+        <p id="demo"></p>
+    </section>
 
-<section id="Ceremony">
-    <h2>The Ceremony</h2>
-    <p>The following itinerary is a guide to the events planned for the day, it will be finalised closer to the date. </p>
-    <img src="images/Itinerary.jpg" alt="Itinerary" loading="lazy">
-    <p>Predrinks and canapés will be served before the ceremony begins.
-        <br> 
-        Dinner will be served during the ceremony, more details will be provided closer to the date.
-        <br>
-        The Bistro will be open for breakfast and lunch on the day of the wedding. Guests will need to liaise with the restaurant and pay for their own meals there.
-        <br>
-        There is a bar available at the venue. It will be an open bar up to a specified amount. You may bring your own alcohol but you will have to pay a corkage fee.</p>
-</section>
-
-<section id="Dress-Code">
-    <div class="dress-code-container">
-        <h2>The Dress Code</h2>
-        <p>Dress Code: Formal<br>
-            We're so excited to celebrate this special day with you, and we'd love for everyone to join us in embracing the elegance of a formal dress code. Here's a little guidance to help you plan your outfit:
-            This is your chance to shine and celebrate in style. We can't wait to see everyone looking their absolute best as we make unforgettable memories together!
+    <section id="Ceremony">
+        <h2>典禮</h2>
+        <p>以下行程是當天規劃活動的指南，將在臨近日期時最終確定。</p>
+        <img src="images/itinerary.jpeg" alt="Itinerary" loading="lazy">
+        <p>儀式開始前將提供飲料和小吃。
+            <br> 
+            儀式期間將提供晚餐，更多詳情將在儀式臨近時提供。
             <br>
+            婚禮當天，小酒館將提供早餐和午餐。客人需要與餐廳聯繫並自行支付餐費。
             <br>
-            Ladies: Floor-length gowns, elegant cocktail dresses, or sophisticated evening separates.
-            <br>
-            <br>
-            Gents: A suit and tie is a must—think dark suits, dress shirts, and polished dress shoes. A tuxedo is optional but always welcome!
-            <br>
-            <br>
-            Footwear: Dress shoes or heels—let's keep it timeless and chic!
+            場地設有酒吧。在指定金額以內，這將是一個開放的酒吧。您可以自備酒水，但需支付開瓶費。
         </p>
-    </div>
+    </section>
 
-    <!-- Men's Slideshow -->
-    <div class="slideshow-container-men">
-        <div class="slide">
-            <img src="images/men.png" alt="Men's Dress Code 1" loading="lazy">
+    <section id="Dress-Code">
+        <div class="dress-code-container">
+            <h2>The Dress Code</h2>
+            <p class="dress-text">我們非常高興與您一起慶祝這個特殊的日子，我們希望每個人都能與我們一起擁抱半正式著裝的優雅。這是您展現才華和慶祝的機會。
+                <br>
+                <br>
+                及地長裙、優雅的雞尾酒禮服或精緻的晚禮服。
+                <br>
+                <br>
+                西裝、領帶，或正式襯衫、休閒褲和西裝外套。領帶是可選的，但鼓勵您佩戴！
+                <br>
+                <br>
+                鞋類：正裝鞋或高跟鞋－讓我們保持永恆和時尚！
+                <br>
+                <br>
+                顏色：淺黃/米色/杏色/淺綠色和其他暖色。
+                <br>
+                <em>請不要穿紅色、黑色或純白色。</em>
+            </p>
         </div>
-        <div class="slide">
-            <img src="images/men2.png" alt="Men's Dress Code 2" loading="lazy">
+
+        <!-- Men's Slideshow -->
+        <div class="slideshow-container-men">
+            <div class="slide">
+                <img src="images/men.jpg" alt="Men's Dress Code 1" loading="lazy">
+            </div>
+            <div class="slide">
+                <img src="images/men2.jpg" alt="Men's Dress Code 2" loading="lazy">
+            </div>
+            <div class="slide">
+                <img src="images/men3.jpg" alt="Men's Dress Code 3" loading="lazy">
+            </div>
         </div>
-        <div class="slide">
-            <img src="images/men3.png" alt="Men's Dress Code 3" loading="lazy">
-        </div>
-    </div>
     
-    <!-- Navigation dots for men -->
-    <div class="dots men-dots">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
+        <!-- Navigation dots for men -->
+        <div class="dots men-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
 
-    <!-- Women's Slideshow -->
-    <div class="slideshow-container-women">
-        <div class="slide">
-            <img src="images/women1.png" alt="Women's Dress Code 1" loading="lazy">
+        <!-- Women's Slideshow -->
+        <div class="slideshow-container-women">
+            <div class="slide">
+                <img src="images/women1.jpeg" alt="Women's Dress Code 1" loading="lazy">
+            </div>
+            <div class="slide">
+                <img src="images/women2.png" alt="Women's Dress Code 2" loading="lazy">
+            </div>
+            <div class="slide">
+                <img src="images/women3.png" alt="Women's Dress Code 3" loading="lazy">
+            </div>
         </div>
-        <div class="slide">
-            <img src="images/women2.png" alt="Women's Dress Code 2" loading="lazy">
-        </div>
-        <div class="slide">
-            <img src="images/women3.png" alt="Women's Dress Code 3" loading="lazy">
-        </div>
-    </div>
     
-    <!-- Navigation dots for women -->
-    <div class="dots women-dots">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-</section>
-
-<section id="Location">
-    <div class="location-container">    
-        <h2>Location</h2>
-        <p>The wedding will be held at <a href="http://www.webersburg.co.za/" target="_blank">Webersburg Wine Estate</a> in Stellenbosch, South Africa.</p>
-        <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.508373698393!2d18.839321176341684!3d-34.005159473174714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4cb9c41edeb3%3A0x1b8691d95ca344ec!2sWebersburg%20Wine%20Estate!5e0!3m2!1sen!2shk!4v1740929645066!5m2!1sen!2shk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Webersburg Wine Estate Location"></iframe>
+        <!-- Navigation dots for women -->
+        <div class="dots women-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
-    </div>
-</section>
+        
 
-
-<section id="Accommodation" class="accommodation">
-    <h2>Webersburg Wine Estate</h2>
-    <p>Accommodation will be provided for up to 50 guests only. Some rooms will be for family only. Some of the rooms may already be booked out by other guests.</p>
-    <section class="accommodation-grid">
-        <div class="accommodation-tile">
-          <img 
-            id="manor-house"
-            class="accommodation-image" 
-            src="https://webersburg.co.za/wp-content/uploads/2018/12/IMG_3235-580x420.jpg" 
-            alt="Manor House" 
-            loading="lazy"/>
-          <p class="accommodation-name">
-              Manor house (Sleeps 10)
-          </p>
-          <p class="accommodation-info" >
-            The manor house was built in 1786 and is an original Cape Dutch Building with yellow wood floors.
-        </p>
-        </div>
-        <div class="accommodation-tile">
-          <img 
-            id="oak-cottage"
-            class="accommodation-image" 
-            src="https://webersburg.co.za/wp-content/uploads/2018/11/oc-580x420.jpg" 
-            alt="Oak Cottage" 
-            loading="lazy"/>
-          <p class="accommodation-name">
-              Oak Cottage (Sleeps 6)
-          </p>
-          <p class="accommodation-info" >
-            The Oak Cottage is a luxury three bedroom en-suite cottage with an open plan lounge, kitchen and dining area.
-        </p>
-        </div> 
-        <div class="accommodation-tile">
-          <img 
-            id="the-jonkerhuis"
-            class="accommodation-image" 
-            src="https://webersburg.co.za/wp-content/uploads/2018/11/Webersburg-Accommodation-580x420.jpg" 
-            alt="The Jonkershuis" 
-            loading="lazy"/>
-          <p class="accommodation-name">
-              The Jonkershuis (Sleeps 12)
-          </p>
-          <p class="accommodation-info" >
-            The Jonkershuis accommodation consists of one two bedroom unit; two luxury units with fully equipped kitchens and additional two luxury units with small kitchenettes.
-        </p>
-        </div>
-        <div class="accommodation-tile">
-          <img 
-            id="the-vineyard-cottages"
-            class="accommodation-image" 
-            src="https://webersburg.co.za/wp-content/uploads/2017/05/IMG_19881-1-580x420.jpg" 
-            alt="The Vineyard Cottages" 
-            loading="lazy"/>
-          <p class="accommodation-name">
-              The Vineyard Cottages (Sleeps 26)
-          </p>
-          <p class="accommodation-info" >
-            Our Vineyard Cottages are situated amongst the vineyards with breathtaking dam and mountain views
-        </p>
+        <div class="color-palette-grid">
+            <div class="color-tile">
+                <div class="color-swatch" style="background-color: #D9C89E;">
+                    <p class="color-caption">#D9C89E</p>
+                </div>
+            </div>
+            <div class="color-tile">
+                <div class="color-swatch" style="background-color: #CEB888;">
+                    <p class="color-caption">#CEB888</p>
+                </div>
+            </div>
+            <div class="color-tile">
+                <div class="color-swatch" style="background-color: #A89968;">
+                    <p class="color-caption">#A89968</p>
+                </div>
+            </div>
+            <div class="color-tile">
+                <div class="color-swatch" style="background-color: #FFFFE0;">
+                    <p class="color-caption">#FFFFE0</p>
+                </div>
+            </div>
+            <div class="color-tile">
+                <div class="color-swatch" style="background-color: #FCD299;">
+                    <p class="color-caption">#FCD299</p>
+                </div>
+            </div>
+            <div class="color-tile">
+                <div class="color-swatch" style="background-color: #E1B87F;">
+                    <p class="color-caption">#E1B87F</p>
+                </div>
+            </div>
+            <div class="color-tile">
+                <div class="color-swatch" style="background-color: #FBCEB1;">
+                    <p class="color-caption">#FBCEB1</p>
+                </div>
+            </div>
+            <div class="color-tile">
+                <div class="color-swatch" style="background-color: #E1B7A7">
+                    <p class="color-caption">#E1B7A7</p>
+                </div>
+            </div>
+            <div class="color-tile">
+                <div class="color-swatch" style="background-color: #D5A286;">
+                    <p class="color-caption">#D5A286</p>
+                </div>
+            </div>
+            <!-- Add more color tiles as needed -->
         </div>
     </section>
-    <p>Accommodation availabilty will be known approximately 3 months before the wedding. Contact Webersburg directly if you urgently want to stay there.</p>
-</section>
 
-
-<section id="RSVP">
-    <h2>RSVP via Partiful</h2>
-    <div class="rsvp-container">
-        <div class="rsvp-content">
-            <div class="rsvp-icon">💌</div>
-            <p class="rsvp-description">We're using <em><a href="https://partiful.com/e/MRTgd8ROvwFuJcNCvbRF" target="_blank">Partiful</a></em> to make our special day even more amazing! Join us there to:</p>
-            <div class="rsvp-features">
-                    <div class="feature-item">
-                        <span class="feature-icon">👥</span>
-                        <p>Confirm your attendance</p>
-                    </div>
-                    <div class="feature-item">
-                    <span class="feature-icon">🎵</span>
-                    <p>Add songs to our wedding playlist</p>
-                </div>
-                    <div class="feature-item">
-                    <span class="feature-icon">🍽️</span>
-                    <p>View food and beverage details</p>
-                </div>
-                    <div class="feature-item">
-                    <span class="feature-icon">📢</span>
-                    <p>Get important updates</p>
-                </div>
-            </div>
-            <a href="https://partiful.com/e/MRTgd8ROvwFuJcNCvbRF" target="_blank" class="rsvp-button">
-                RSVP Now
-                <span class="button-icon">→</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section id="Getting-There">
-    <div class="getting-there-container">
-    <h2>Flights & Activities</h2>
-    <div class="flights">
-        <h3>Flights</h3>
-        <ul>
-            <li>From Hong Kong: Fly direct with <a href="https://www.cathaypacific.com/" target="_blank">Cathay Pacific</a> to OR Tambo International Airport in Johannesburg</li>
-            <li>Other options from Hong Kong: <a href="https://www.qatarairways.com/" target="_blank">Qatar Airways</a> to Cape Town via Doha. Or <a href="https://www.emirates.com/" target="_blank">Emirates</a> to Cape Town via Dubai. Other options include <a href="https://www.ethiopianairlines.com/book/booking/flight" target="_blank">Ethiopian</a>, <a href="https://www.qantas.com/" target="_blank">Qantas</a> and <a href="https://www.turkishairlines.com" target="_blank">Turkish</a> Airlines., but these may be a longer travel time.</li><br>
-            <li>From Johannesburg: Fly direct to Cape town, with either <a href="https://www.flysafair.com/" target="_blank">FlySafair</a>, <a href="https://www.lift.co.za/" target="_blank">Lift Airways</a>, <a href="https://www.flysaa.com/" target="_blank">FlySAA</a>, <a href="https://www.cemair.co.za/index.php" target="_blank">CemAir</a> or <a href="https://www.flyairlink.com/en/za/" target="_blank">Airlink</a>.</li>
-            <li>From Cape Town: Use Uber or Bolt to get to Webersburg from the airport. Or rent a car from <a href="https://www.hertz.co.za/" target="_blank">Hertz</a>, <a href="http://www.budget.co.za/" target="_blank">Budget</a>, <a href="https://www.sani.co.za/" target="_blank">Sani Sixt</a>, <a href="https://www.woodford.co.za/branches/cape-town-international" target="_blank">Woodford</a>, <a href="https://www.avis.co.za/" target="_blank">Avis</a>, <a href="https://www.tempestcarhire.co.za/rental-locations/western-cape/cape-town-international-airport" target="_blank">Tempest</a> or <a href="https://www.europcar.co.za/rental-locations/rsa/western-cape/cape-town-international-airport" target="_blank">Europcar</a>.</li>
-            <li>Public transport is not recommended.</li>
-        </ul>
-    </div>
-    <div class="activities">
-        <h3>Activities</h3>
-        <ul>
-            <li>There are many activities to do in <a href="https://www.visitstellenbosch.org/"	 target="_blank">Stellenbosch</a>, including wine tasting, cycling, hiking and more.</li>
-            <li><a href="https://www.sanparks.org/parks/table-mountain" target="_blank">Table Mountain</a> is a must do with a beautiful view of the city and the ocean.</li>
-            <li><a href="https://www.sanparks.org/parks/cape-point" target="_blank">Cape Point</a> is a wonderful national park with beautiful views that includes Simon's Town and its penguin colony. We recommend going via Chapman's Peak.</li>
-            <li><a href="https://www.robben-island.org.za/" target="_blank">Robben Island</a> was a place of imprisonment for Nelson Mandela and many other political prisoners. It is now a UNESCO World Heritage Site.</li>
-            <li>You can visit the <a href="https://www.southafrica.net/gl/en/travel/category/places-to-go/big-city-life/cape-town" target="_blank"> South African Tourism website</a> to find more activities</li>
-        </ul>
-    </div>
-    </div>
-</section>
-
-<section id="Contact">
-    <h2>聯絡我們</h2>
-    <div class="contact-container">
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-details">
-                        <h3>電子郵件</h3>
-                        <a class="email" href="mailto:Dvheerden@Hotmail.co.za">Dvheerden@Hotmail.co.za</a>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <div class="contact-details">
-                        <h3>電話 / WhatsApp</h3>
-                        <a class="tel" href="tel:+85269767322">Dane: 6976 7322</a><br>
-                        <a class="tel" href="tel:+85266432013">Peony: 6643 2013</a>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">🍷</div>
-                    <div class="contact-details">
-                        <h3>場地資訊</h3>
-                        <a href="http://www.webersburg.co.za/" target="_blank" class="venue-link">Visit Webersburg Website</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="contact-message">
-                <p>有問題嗎</p>
-                <p>W我們隨時準備幫助讓我們的特別日子對每個人都完美。</p>
+    <section id="Location">
+        <div class="location-container">    
+            <h2>地點</h2>
+            <p>The wedding will be held at <a href="http://www.webersburg.co.za/" target="_blank">Webersburg Wine Estate</a> in Stellenbosch, South Africa.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.508373698393!2d18.839321176341684!3d-34.005159473174714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4cb9c41edeb3%3A0x1b8691d95ca344ec!2sWebersburg%20Wine%20Estate!5e0!3m2!1sen!2shk!4v1740929645066!5m2!1sen!2shk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Webersburg Wine Estate Location"></iframe>
             </div>
         </div>
-    </div>
-</section>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-<script src="./script.js"></script>
+    </section>
+
+
+    <section id="Accommodation" class="accommodation">
+        <h2>韋伯斯堡葡萄酒莊</h2>
+        <p>莊園最多可容納 50 名客人住宿。有些房間僅供家庭使用。部分房間可能已被其他房客預訂。</p>
+        <section class="accommodation-grid">
+            <div class="accommodation-tile">
+                <img 
+                id="manor-house"
+                class="accommodation-image" 
+                src="https://webersburg.co.za/wp-content/uploads/2018/12/IMG_3235-580x420.jpg" 
+                alt="Manor House" 
+                loading="lazy"/>
+                <p class="accommodation-name">
+                    莊園 (可容納 10 人)
+                </p>
+                <p class="accommodation-info" >
+                    莊園建於 1786 年，是原始的開普荷蘭建築，舖有黃色木地板。
+                </p>
+            </div>
+            <div class="accommodation-tile">
+                <img 
+                id="oak-cottage"
+                class="accommodation-image" 
+                src="https://webersburg.co.za/wp-content/uploads/2018/11/oc-580x420.jpg" 
+                alt="Oak Cottage" 
+                loading="lazy"/>
+                <p class="accommodation-name">
+                    橡樹小屋 (可容納 6 人)
+                </p>
+                <p class="accommodation-info" >
+                    橡樹小屋 (Oak Cottage) 是一間豪華的三間臥室套房小屋，設有開放式休息室、廚房和用餐區
+                </p>
+            </div> 
+            <div class="accommodation-tile">
+                <img 
+                id="the-jonkerhuis"
+                class="accommodation-image" 
+                src="https://webersburg.co.za/wp-content/uploads/2018/11/Webersburg-Accommodation-580x420.jpg" 
+                alt="The Jonkershuis" 
+                loading="lazy"/>
+                <p class="accommodation-name">
+                    瓊克之家 (可容納 12 人)
+                </p>
+                <p class="accommodation-info" >
+                    瓊克水宅 (Jonkershuis) 的住宿包括一套兩房公寓；兩間豪華單元配備齊全的廚房，另外兩間豪華單元配備小廚
+                </p>
+            </div>
+            <div class="accommodation-tile">
+                <img 
+                id="the-vineyard-cottages"
+                class="accommodation-image" 
+                src="https://webersburg.co.za/wp-content/uploads/2017/05/IMG_19881-1-580x420.jpg" 
+                alt="The Vineyard Cottages" 
+                loading="lazy"/>
+                <p class="accommodation-name">
+                    葡萄園小屋 (可容納 26 人)
+                </p>
+                <p class="accommodation-info" >
+                    我們的葡萄園小屋坐落在葡萄園之中，可以欣賞到令人驚嘆的水壩和山脈景觀。
+                </p>
+            </div>
+        </section>
+        <p>婚禮舉辦前約 3 個月，飯店將會向我們提供一份可用房間的清單。如果您急需入住韋伯斯堡，請直接聯絡韋伯斯堡。  
+            <br>
+            <br>
+            斯泰倫博斯還有許多其他住宿選擇，包括其他葡萄酒農場。以及開普敦的飯店和 Airbnb。
+        </p>
+    </section>
+
+
+    <section id="RSVP">
+        <h2>敬請回覆</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-content">
+                <div class="rsvp-features">
+                    <a href="https://partiful.com/e/MRTgd8ROvwFuJcNCvbRF" target="_blank">
+                        <div class="feature-item">
+                            <span class="feature-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+                            <p>點擊此處透過<em>Partiful</em>確認您的出席情況</p>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="songNotReady()">
+                        <div class="feature-item">
+                            <span class="feature-icon">
+                                <i class="fa-solid fa-headphones"></i>
+                            </span>
+                            <p>Spotify 或 Apple Music 播放清單即將推出</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.icloud.com/invites/090jECHMOrYwPV1o0PC4NOFyA" target="_blank">
+                        <div class="feature-item">
+                            <span class="feature-icon">
+                                <i class="fa-solid fa-camera"></i>
+                            </span>
+                            <p>透過加入 iCloud 相簿來留下美好回憶</p>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="foodNotReady()">
+                        <div class="feature-item">
+                            <span class="feature-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                            </span>
+                            <p>點擊此處查看食品和飲料詳情</p>
+                        </div>
+                    </a>
+
+                    <a href="https://chat.whatsapp.com/KoZu1tDBVomFpWbYZXkoOA" target="_blank">
+                        <div class="feature-item">
+                        <span class="feature-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </span>
+                        <p>在此加入 WhatsApp 群組！</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Getting-There">
+        <div class="getting-there-container">
+            <h2>航班和活動</h2>
+            <div class="flights">
+                <h3>航班</h3>
+                    <ul>
+                        <li>From Hong Kong: Fly direct with <a href="https://www.cathaypacific.com/" target="_blank">Cathay Pacific</a> to OR Tambo International Airport in Johannesburg.</li>
+                        <li>Other options from Hong Kong: <a href="https://www.qatarairways.com/" target="_blank">Qatar Airways</a> to Cape Town via Doha. 
+                        <br>    
+                        Or <a href="https://www.emirates.com/" target="_blank">Emirates</a> to Cape Town via Dubai. 
+                        <br>
+                        Other options include <a href="https://www.ethiopianairlines.com/book/booking/flight" target="_blank">Ethiopian</a>, <a href="https://www.qantas.com/" target="_blank">Qantas</a> and <a href="https://www.turkishairlines.com" target="_blank">Turkish</a> Airlines, but these may have longer travel times.</li><br>
+                        <li>From Johannesburg: Fly direct to Cape Town, with either <a href="https://www.flysafair.com/" target="_blank">FlySafair</a>, <a href="https://www.lift.co.za/" target="_blank">Lift Airways</a>, <a href="https://www.flysaa.com/" target="_blank">FlySAA</a>, <a href="https://www.cemair.co.za/index.php" target="_blank">CemAir</a> or <a href="https://www.flyairlink.com/en/za/" target="_blank">Airlink</a>.</li>
+                        <li>From Cape Town: Use Uber or Bolt to get to Webersburg from the airport. Or rent a car from <a href="https://www.hertz.co.za/" target="_blank">Hertz</a>, <a href="http://www.budget.co.za/" target="_blank">Budget</a>, <a href="https://www.sani.co.za/" target="_blank">Sani Sixt</a>, <a href="https://www.woodford.co.za/branches/cape-town-international" target="_blank">Woodford</a>, <a href="https://www.avis.co.za/" target="_blank">Avis</a>, <a href="https://www.tempestcarhire.co.za/rental-locations/western-cape/cape-town-international-airport" target="_blank">Tempest</a> or <a href="https://www.europcar.co.za/rental-locations/rsa/western-cape/cape-town-international-airport" target="_blank">Europcar</a>.</li>
+                        <li>Public transport is not recommended.</li>
+                        <li>For those who may need a visa for South Africa, check the <a href="https://ehome.dha.gov.za/epermit/home" target="_blank">evisa website.</a></li>
+                    </ul>
+            </div>
+            <div class="activities">
+                <h3>活動</h3>
+                <ul>
+                    <li>There are many activities to do in <a href="https://www.visitstellenbosch.org/"	 target="_blank">Stellenbosch</a>, including wine tasting, cycling, hiking and more.</li>
+                    <li><a href="https://www.sanparks.org/parks/table-mountain" target="_blank">Table Mountain</a> is a must do with a beautiful view of the city and the ocean.</li>
+                    <li><a href="https://capepoint.co.za/" target="_blank">Cape Point</a> is a wonderful national park with beautiful views that includes <a href="https://www.simonstown.com/"  target="_blank">Simon's Town</a> and its penguin colony. We recommend going via Chapman's Peak.</li>
+                    <li><a href="https://www.robben-island.org.za/" target="_blank">Robben Island</a> was a place of imprisonment for Nelson Mandela and many other political prisoners. It is now a UNESCO World Heritage Site.</li>
+                    <li>You can visit the <a href="https://www.southafrica.net/gl/en/travel/category/places-to-go/big-city-life/cape-town" target="_blank"> South African Tourism website</a> to find more activities.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <h2>聯絡我們</h2>
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-at"></i>
+                        </div>
+
+                        <div class="contact-details">
+                            <h3>電子郵件</h3>
+                            <a class="email" href="mailto:Dvheerden@Hotmail.co.za">Dvheerden@Hotmail.co.za</a>
+                        </div>
+                    </div>
+                
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>電話 / WhatsApp</h3>
+                            <a class="tel" href="tel:+85269767322">Dane: 6976 7322</a><br>
+                            <a class="tel" href="tel:+85266432013">Peony: 6643 2013</a>
+                        </div>
+                    </div>
+                
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-wine-glass"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>場地資訊</h3>
+                            <a href="http://www.webersburg.co.za/" target="_blank" class="venue-link">造訪韋伯斯堡網站</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-message">
+                    <p>有疑問嗎？請立即與我們聯繫！</p>
+                    <p>我們在這裡致力於幫助每個人度過完美的特殊日子。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
