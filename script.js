@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileMenuBtn.classList.remove("active");
       navLinks.classList.remove("active");
       overlay.classList.remove("active");
+      toggleScroll(false); // Re-enable scrolling
     });
   });
 
@@ -237,3 +238,52 @@ function foodNotReady() {
 //function photoNotReady() {
 //    alert("The link for the photo album will be up and running soon!");
 //}
+
+// Floating Notification Logic
+document.addEventListener('DOMContentLoaded', () => {
+  const notificationContainer = document.getElementById('notification-container');
+  const notificationButton = document.getElementById('notification-button');
+  const notificationModal = document.getElementById('notification-modal');
+  const notificationClose = document.getElementById('notification-close');
+  // Optional: const notificationBadge = notificationButton.querySelector('.notification-badge');
+
+  if (notificationButton && notificationModal && notificationClose && notificationContainer) {
+    // Show modal on button click
+    notificationButton.addEventListener('click', () => {
+      notificationModal.classList.add('show');
+      // Optional: Hide badge when opened
+      // if (notificationBadge) {
+      //   notificationBadge.style.display = 'none';
+      // }
+    });
+
+    // Hide modal and container on close button click
+    notificationClose.addEventListener('click', () => {
+      notificationModal.classList.remove('show');
+      notificationContainer.style.display = 'none'; // Hide the whole thing
+    });
+
+    // Hide modal and container when clicking outside the modal content
+    window.addEventListener('click', (event) => {
+      // Check if the modal is visible and the click is directly on the modal background
+      if (event.target === notificationModal && notificationModal.classList.contains('show')) {
+        notificationModal.classList.remove('show');
+        notificationContainer.style.display = 'none'; // Hide the whole thing
+      }
+    });
+
+    // Initially, you might want to show the button. If you want it hidden until
+    // there's an actual notification, you'd handle that logic elsewhere (e.g., server-side
+    // or based on some other condition).
+    // For now, we assume the button is visible by default via HTML/CSS.
+
+    // Example: Show badge if needed (you'd replace '1' with actual count)
+    // if (notificationBadge) {
+    //    notificationBadge.textContent = '1'; // Or some dynamic number
+    //    notificationBadge.style.display = 'inline-block';
+    // }
+
+  } else {
+    console.error('Notification elements not found!');
+  }
+});

@@ -1562,3 +1562,94 @@ p {
     transform: translateY(-10px);
   }
 }
+
+/* Floating Notification Styles */
+#notification-container {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.notification-button {
+  background-color: #ccc; /* Example color - adjust as needed */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; /* Needed for badge positioning */
+  transition: background-color 0.3s ease;
+}
+
+.notification-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  display: none; /* Hide badge by default, show with JS if needed */
+}
+
+/* Show badge if it has content (can be controlled by JS) */
+.notification-badge:not(:empty) {
+    display: inline-block;
+}
+
+.notification-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1001; /* Above the button */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Dim background */
+}
+
+.notification-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.notification-close-button {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.notification-close-button:hover,
+.notification-close-button:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Add class to show modal */
+.notification-modal.show {
+  display: block;
+}
