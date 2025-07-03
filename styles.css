@@ -919,6 +919,12 @@ p {
   z-index: 10;
 }
 
+.accommodation > p > a {
+  color: var(--text-color3);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
 .accommodation-grid {
   padding: 30px;
   display: grid;
