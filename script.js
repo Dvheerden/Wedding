@@ -231,7 +231,7 @@ function songNotReady() {
 
 function foodNotReady() {
   alert(
-    "Expect more details about 2 months before the wedding, let us know about any food allergies!"
+    "Expect more details about 2 months before the wedding, let us know about any food allergies as soon as possible!"
   );
 }
 
