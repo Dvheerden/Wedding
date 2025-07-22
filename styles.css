@@ -1,9 +1,5 @@
 /*comments*/
 
-.language-switcher {
-  visibility: hidden !important;
-}
-
 :root {
   --background-color1: #faebd7;
   --background-color2: #faf0e6;
@@ -1665,6 +1661,3 @@ p {
 .notification-modal.show {
   display: block;
 }
-.goog-te-banner-frame{
- display:none !important;
- }
