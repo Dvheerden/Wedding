@@ -8,7 +8,7 @@
   --text-color2: #99885a;
   --text-color3: #555;
   --border-color1: #ff8da1;
-  --navbar-height: 6rem;
+  --navbar-height: 8rem;
   --navbar-bg: rgba(255, 255, 255, 0.95);
   --navbar-text: #333;
   --navbar-hover: #ff8da1;
@@ -42,6 +42,7 @@ body {
   text-align: center;
   padding-top: var(--navbar-height);
   background-color: var(--background-color1);
+  top: 0px !important;
 }
 
 h2 {
@@ -174,7 +175,7 @@ p {
 
   .nav-links {
     position: fixed;
-    top: 0;
+    top: -50px;
     right: -100%;
     width: 80%;
     height: 100vh;
@@ -1660,4 +1661,17 @@ p {
 /* Add class to show modal */
 .notification-modal.show {
   display: block;
+}
+
+#google_translate_element select {
+      background: url('path_to_your_flags_sprite.png') no-repeat;
+      background-size: contain;
+      height: 10px;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+
+iframe.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none !important;
 }

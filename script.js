@@ -287,3 +287,10 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('Notification elements not found!');
   }
 });
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'af,en,fr,de,hi,pt,sn,tl,tn,xh,zu,ja,zh-CN,zh-TW',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+  }, 'google_translate_element');
+}
