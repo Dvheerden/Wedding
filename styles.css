@@ -1663,12 +1663,23 @@ p {
   display: block;
 }
 
-
-
-iframe.VIpgJd-ZVi9od-ORHb-OEVmcd {
-  display: none !important;
+/* GTranslate Dropdown Custom Styles */
+.gtranslate_wrapper select {
+  color: var(--navbar-text) !important;
+  background: var(--navbar-bg) !important;
+  border: 1px solid var(--text-color2);
+  border-radius: 4px;
+  padding: 0.3em 1em;
+  font-size: 1.6rem;
+  font-family: inherit;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-
-.translate-container{
-  scale: 0.8;
+.gtranslate_wrapper select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--text-color2);
+}
+.gtranslate_wrapper option {
+  color: var(--navbar-text);
+  background: var(--navbar-bg);
 }
