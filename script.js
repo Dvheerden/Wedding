@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileMenuBtn.classList.remove("active");
       navLinks.classList.remove("active");
       overlay.classList.remove("active");
+      toggleScroll(false); // Re-enable scrolling
     }
   });
 
