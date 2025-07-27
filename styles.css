@@ -23,7 +23,7 @@
 }
 
 section {
-  padding-top: 60px !important;
+  padding-top: 80px !important;
   padding-bottom: 50px !important;
 }
 
@@ -113,7 +113,7 @@ p {
   display: none;
   position: absolute;
   right: 2rem;
-  top: 82%;
+  top: 62%;
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 1001 !important;
@@ -1663,15 +1663,12 @@ p {
   display: block;
 }
 
-#google_translate_element select {
-      background: url('path_to_your_flags_sprite.png') no-repeat;
-      background-size: contain;
-      height: 10px;
-      border: none;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-    }
+
 
 iframe.VIpgJd-ZVi9od-ORHb-OEVmcd {
   display: none !important;
+}
+
+.translate-container{
+  scale: 0.8;
 }
