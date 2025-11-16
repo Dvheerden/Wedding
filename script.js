@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // START OF CLOCK JS
 // Configuration
-const WEDDING_DATE = "dec 01 2025 00:00:01";
+const WEDDING_DATE = "dec 01 2025 16:00:00";
 const deadline = new Date(WEDDING_DATE + " UTC+2").getTime();
 
 // Confetti celebration functions
@@ -230,11 +230,11 @@ function songNotReady() {
   alert("The playlist will be up and running a few weeks before the wedding!");
 }
 
-function foodNotReady() {
-  alert(
-    "Expect more details about 2 months before the wedding, let us know about any food allergies as soon as possible!"
-  );
-}
+//function foodNotReady() {
+//  alert(
+//    "Expect more details about 2 months before thewedding, let us know about any food allergies as soon as possible!"
+//  );
+//}
 
 //function photoNotReady() {
 //    alert("The link for the photo album will be up and running soon!");
